@@ -1,0 +1,74 @@
+<%- include("partials/header") %>
+
+<section class="colored-section" id="title">
+
+  <div class="container-fluid">
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="/">Academics</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/academics">Academics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/proctor">Proctor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/attendance">Attendance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/student">Student</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Title -->
+    <div class="row">
+      <div class="col-lg-6">
+        <div>
+
+          <a href="/details"><button class="btn btn-lg btn-dark" type="button" name="button">View Student Details</button></a>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container-fluid">
+
+    <form class="" action="/academics" method="post">
+      <div class="form-group">
+        <label>College Name</label>
+        <input class="form-control" type="text" name="college" placeholder="College Name">
+        <label>Branch Name</label>
+        <input class="form-control" type="text" name="branch" placeholder="Branch Name">
+        <label>Year Of Study</label>
+        <input class="form-control" type="text" name="year" placeholder="Year Of Study">
+      </div>
+
+      <button class="btn btn-primary" type="submit" name="button">Submit</button>
+    </form>
+    <a href="/"><button class="btn btn-primary gotoButton" type="button" name="button">Home</button></a>
+  </div>
+
+
+</section>
+
+<script src="index.js" charset="utf-8"></script>
+
+<!-- Footer -->
+
+<footer class="white section" id="footer">
+  <div class="container-fluid">
+    <p>© Copyright 2020 KvaCh</p>
+  </div>
+
+</footer>
+<%-include("partials/footer") %>
